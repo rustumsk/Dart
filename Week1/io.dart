@@ -16,10 +16,11 @@ void main(){
   var age = int.parse(stdin.readLineSync()!);
 
   stdout.writeln("Are you gay?1. yes || 2. no: ");
-  var listen = stdin.readLineSync();
+  int listen = int.parse(stdin.readLineSync()!);
+  var check;
 
-
+  check = listen == 1? check = "gay": check = "not gay";
   print("Name: $name" + "\n");
   print("Age: $age" + "\n");
-  print("Gay?: $listen");
+  print("Gay?: $check");
 }
