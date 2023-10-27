@@ -10,17 +10,17 @@ input output
 */
 void main(){
   stdout.writeln("What is your name?: ");
-  var name = stdin.readLineSync();
+  dynamic name = stdin.readLineSync();
 
   stdout.writeln("Your age?: ");
-  var age = int.parse(stdin.readLineSync()!);
+  dynamic age = stdin.readLineSync();
 
   stdout.writeln("Are you gay?1. yes || 2. no: ");
-  int listen = int.parse(stdin.readLineSync()!);
-  var check;
+  dynamic listen = stdin.readLineSync();
+  dynamic check;
 
   check = listen == 1? check = "gay": check = "not gay";
   print("Name: $name" + "\n");
   print("Age: $age" + "\n");
-  print("Gay?: $check");
+  print("Gay?: $check"); 
 }
